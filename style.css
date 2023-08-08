@@ -42,7 +42,10 @@ main{
 }
 
 .arrow-container{
-    height: 370px;
+    height: 250px;
+}
+
+.arrow-element{
     animation: down 2s infinite;
 }
 
@@ -50,6 +53,7 @@ main{
     color: #05700D;
 }
 
+/* ----------------------------------------------ANIMATIONS------------------------------------------------*/
 
 @keyframes pulse{
     0%{
@@ -100,6 +104,22 @@ main{
     }
 }
 
+/* ---------------------------------------------- MEDIA QUERY ------------------------------------------------*/
+
+@media (max-width: 992px) {
+    .arrow-container{
+        height: 50px;
+    }
+
+    .btn-container{
+        margin-top: 150px;
+    }
+
+    main{
+        padding-top: 20px;
+    }
+}
+
 @media (max-width: 576px) {
     .cart-logo{
         display: none;
@@ -117,4 +137,23 @@ main{
         margin-left: 25px;
     }
 
+    .main-text{
+        margin-right: 60px;
+    }
+
+    .arrow-container{
+        margin-top: 50px;
+        height: 50px;
+    }
+
+    .btn-container{
+        justify-content: center;
+    }
+
+    main{
+        padding-top: 20px;
+    }
+
 }
+
+
