@@ -14,7 +14,7 @@ body{
 main{
     background-image: url(assets/background-mudec.png);
     background-size: cover;
-    height: 80vh;
+    
     padding-top: 15vh;
 }
 
@@ -52,6 +52,22 @@ main{
 .text-green{
     color: #05700D;
 }
+
+.products-text-container{
+    background-image: url(assets/header-background.PNG);
+}
+
+.card{
+    background: rgb(0,0,0);
+    background: linear-gradient(360deg, rgba(0,0,0,1) 50%, rgba(5,112,13,1) 100%);
+    border: solid 2px #05700c6b ;
+}
+
+.btn{
+    background-color: #05700D;
+}
+
+
 
 /* ----------------------------------------------ANIMATIONS------------------------------------------------*/
 
@@ -169,6 +185,7 @@ main{
 
     .info-container-one{
         margin: 110px 60px 60px 60px;
+        text-align: center;
     }
 
     .img-section-one-container{
@@ -185,6 +202,8 @@ main{
     .text-section-one{
         text-align: center;
     }
+
+    
 }   
 
 
