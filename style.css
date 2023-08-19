@@ -14,8 +14,11 @@ body{
 main{
     background-image: url(assets/background-mudec.png);
     background-size: cover;
-    
     padding-top: 15vh;
+}
+
+.text-green{
+    color: #05700D;
 }
 
 .img-logo{
@@ -47,10 +50,6 @@ main{
 
 .arrow-element{
     animation: down 2s infinite;
-}
-
-.text-green{
-    color: #05700D;
 }
 
 .products-text-container{
