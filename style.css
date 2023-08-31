@@ -14,6 +14,11 @@ body{
 main{
     background-image: url(assets/background-mudec.jpg);
     padding-top: 15vh;
+    height: 95vh;
+}
+
+.navbar{
+    top: -8px;
 }
 
 .text-green{
@@ -45,11 +50,15 @@ main{
 }
 
 .arrow-container{
-    height: 200px;
+    height: 350px;
 }
 
 .arrow-element{
     animation: down 2s infinite;
+}
+
+.section-info{
+    height: 96vh;
 }
 
 .products-text-container{
@@ -60,7 +69,14 @@ main{
 .card{
     background-image: url(assets/background-mudec.jpg);
     background-size: cover;
-    border: 1px solid #666666;
+    border: 2px solid #666666;
+}
+
+.card:hover{
+    animation: shadow-drop-center 0.2s linear both;
+    transform: translateY(-10px);
+    transition: 0.2s all ease;
+
 }
 
 .btn{
@@ -71,6 +87,14 @@ main{
 .btn:hover{
     background-color: #ffffff;
     color: #000000;
+}
+
+.section-contact{
+    height: 85vh;
+}
+
+.form-container{
+    height: 65vh;
 }
 
 .contact-container{
@@ -133,11 +157,21 @@ main{
     }
 }
 
+@keyframes shadow-drop-center{
+    0%{
+        box-shadow:0 0 0 0 transparent;
+    }
+    100%{
+        box-shadow:0 0 20px 0 rgba(255,255,255,.55);
+    }
+}
+
 /* ---------------------------------------------- MEDIA QUERY ------------------------------------------------*/
 
 @media (max-width: 992px) {
     .arrow-container{
-        height: 50px;
+        margin-top: 70px;
+        height: 100px;
     }
 
     .btn-container{
@@ -146,6 +180,19 @@ main{
 
     main{
         padding-top: 20px;
+        height: 60vh;
+    }
+
+    .section-info{
+        height: 85vh;
+    }
+
+    .section-contact{
+        height: 70vh;
+    }
+    
+    .form-container{
+        height: 55vh;
     }
 }
 
@@ -182,8 +229,7 @@ main{
     }
 
     .arrow-container{
-        margin-top: 90px;
-        height: 40px;
+        margin-top: 50px;
     }
 
     .btn-container{
@@ -192,6 +238,7 @@ main{
 
     main{
         padding-top: 20px;
+        height: 60vh;
     }
 
     .info-container-one{
@@ -216,6 +263,14 @@ main{
 
     .text-section-one{
         text-align: center;
+    }
+
+    .section-contact{
+        height: 90vh;
+    }
+    
+    .form-container{
+        height: 75vh;
     }
 
     .input-contact-container{
